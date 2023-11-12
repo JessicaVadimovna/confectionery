@@ -1,0 +1,349 @@
+@font-face {
+    font-family:'Caveat';
+    src: url(assets/fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+body, html {
+background-color: beige;
+font-family:'Caveat';
+font-size: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 5% 10% 40% 40% 10%;
+    grid-template-areas: 
+                        "h h h h"
+                        "m m m m"
+                        "c1 c1 c1 c1"
+                        "c2 c2 c2 c2"
+                        "f f f f";
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    background-color: #A1C05A;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    gap: 1em;
+    background-size: 100vh;
+}
+
+.phone {
+    content: url(assets/picture/phone.png);
+    width: 1em; /* Ширина  */
+    height: auto; /* Пропорции */
+}
+
+.mail {
+    content: url(assets/picture/message.png);
+    width: 1em; /* Ширина  */
+    height: auto; /* Пропорции */
+
+}
+
+.favorite {
+    content: url(assets/picture/heart.png);
+    width: 2em; /* Ширина  */
+    height: auto; /* Пропорции */
+}
+
+.buscet {
+    content: url(assets/picture/buscet.png);
+    width: 2em; /* Ширина  */
+    height: auto; /* Пропорции */
+}
+
+.menu {
+    grid-area: m;
+    display: flex;
+    background-color: #C9A2B3;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo {
+    content: url(assets/picture/logo.png);
+    width: 1fr; /* Ширина логотипа */
+    height: auto; /* Пропорции */
+}
+
+.content1 p {
+    grid-area: cp1;
+    text-align: center;
+}
+
+.content2 p {
+    grid-area: cp2;
+    text-align: center;
+}
+
+
+.content1 {
+    grid-area: c1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 12% 100%;
+    grid-template-areas: ". cp1 cp1 ."
+                        "fc bc cc mc";
+    justify-items: center;
+    gap: 2%;
+}
+
+.cake1 {
+    grid-area: fc;
+}
+
+.cake1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cake2 {
+    grid-area: bc;
+}
+
+.cake2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cake3 {
+    grid-area: cc;
+}
+
+.cake3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cake4 {
+    grid-area: mc;
+}
+
+.cake4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content2 {
+    grid-area: c2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 12% 15% 50%;
+    grid-template-areas: ". . . . . . . ."
+                        ". . . cp2 cp2 . . ."
+                        "ca cu ec wa ma bu cr ch";
+    justify-items: center;
+    gap: 2px;
+}
+
+.cakes {
+    grid-area: ca;
+    
+}
+
+.cakes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cupcakes {
+    grid-area: cu;
+}
+
+.cupcakes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eclairs {
+    grid-area: ec;
+}
+
+.eclairs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.waffles {
+    grid-area: wa;
+}
+
+.waffles img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.macaroons {
+    grid-area: ma;
+}
+
+.macaroons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buns {
+    grid-area: bu;
+}
+
+.buns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.croissants {
+    grid-area: cr;
+}
+
+.croissants img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cheesecakes {
+    grid-area: ch;
+}
+
+.cheesecakes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    grid-area: f;
+    background-color: #242543;
+    margin: 0%;
+    padding: 0%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_flex {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.telegram {
+    content: url(assets/picture/telegram.svg);
+    width: 2em; /* Ширина */
+    height: auto; /* Пропорции */
+
+}
+
+.whatsapp {
+    content: url(assets/picture/whatsapp.svg);
+    width: 2em; /* Ширина  */
+    height: auto; /* Пропорции */
+}
+
+.youtube {
+    content: url(assets/picture/youtube.svg);
+    width: 2em; /* Ширина  */
+    height: auto; /* Пропорции */
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #e75a97;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    font-size: 1.2em;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Стили для мобильных телефонов */
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+    }
+
+    .header, .menu, .content1, .content2, .footer {
+        padding: 5px;
+    }
+
+    /* Картинки по одной в ряд */
+    .content1, .content2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Скрыть какой-нибудь контент */
+    .favorite {
+        display: none;
+    }
+}
+
+/* Стили для планшетов */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .container {
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .header, .menu, .content1, .content2, .footer {
+        padding: 10px;
+    }
+
+    /* Контент в столбцах вниз */
+    .content1, .content2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Скрыть какой-нибудь контент (пример) */
+    .mail {
+        display: none;
+    }
+}
+
+/* Стили для больших экранов (например, компьютеров) */
+@media screen and (min-width: 768px) {
+    .header, .menu, .content1, .content2, .footer {
+        padding: 20px;
+    }
+
+    /* Восстановить видимость скрытого контента */
+    .favorite, .mail {
+        display: inline-block;
+    }
+}
+
+/* Дополнительные стили для адаптивности */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
